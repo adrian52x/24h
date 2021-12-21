@@ -1,6 +1,7 @@
 package com.example.project24h;
 
 import com.example.project24h.models.Municipality;
+import com.example.project24h.models.Party;
 import com.example.project24h.repos.CandidateRepo;
 import com.example.project24h.repos.MunicipalityRepo;
 import com.example.project24h.repos.PartyRepo;
@@ -28,7 +29,15 @@ public class DataSetup implements CommandLineRunner {
 
     municipalityRepo.save(new Municipality("Copenhagen"));
 
+    partyRepo.save(new Party("Social Democrats","Mette Frederiksen"));
+    partyRepo.save(new Party("Venstre","Jakob Ellemann-Jensen"));
+    partyRepo.save(new Party("Conservative","Søren Pape Poulsen"));
+    partyRepo.save(new Party("SF","Pia Olsen Dyhr"));
+    partyRepo.save(new Party("Red–Green","Mai Villadsen"));
+
 
 
     }
+
+
 }

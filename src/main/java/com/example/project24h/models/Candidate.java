@@ -24,7 +24,7 @@ public class Candidate {
 
     @JsonBackReference
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "candidate_id", referencedColumnName = "id")
+    //@JoinColumn(name = "candidate_id", referencedColumnName = "id")
     private Party party;
 
     public Candidate(String firstName, String lastName, String age){
@@ -32,5 +32,10 @@ public class Candidate {
         this.lastName = lastName;
         this.age = age;
     }
+
+
+   /* public void addParty(Party party){
+        this.party = party;
+    }*/
 
 }
