@@ -11,3 +11,6 @@ import java.util.List;
 public interface CandidateRepo extends JpaRepository<Candidate,Integer> {
     List<Candidate> findCandidatesByParty(Party party);
 }
+
+
+

@@ -19,7 +19,7 @@ public class Candidate {
     private int id;
     private String firstName;
     private String lastName;
-    private String age;
+    private int age;
     private int votes;
 
     @JsonBackReference
@@ -27,7 +27,7 @@ public class Candidate {
     //@JoinColumn(name = "candidate_id", referencedColumnName = "id")
     private Party party;
 
-    public Candidate(String firstName, String lastName, String age){
+    public Candidate(String firstName, String lastName, int age){
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
